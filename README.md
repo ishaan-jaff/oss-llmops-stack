@@ -1,1 +1,1 @@
-# oss-llmops-stack
+# OSS LLMOps Stack
