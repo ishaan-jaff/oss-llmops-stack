@@ -1,5 +1,5 @@
 export default {
-  logo: <span>OSS LLMops Stack</span>,
+  logo: <span>OSS LLMOps Stack</span>,
   project: {
     link: "https://github.com/langfuse/oss-llmops-stack",
   },
