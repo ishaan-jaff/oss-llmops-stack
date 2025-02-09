@@ -10,7 +10,6 @@ export default withNextra({
     images: {
         unoptimized: true,
     },
-    assetPrefix: './assets',
 })
 
 // If you have other Next.js configurations, you can pass them as the parameter:
