@@ -1,5 +1,55 @@
+import { Steps } from "nextra/components";
+
 # Get Started
 
-Officia minim aliqua laboris Lorem sit nostrud nisi esse consequat consectetur consequat amet aliqua magna. Id incididunt laborum ut velit ex aute sunt consectetur tempor voluptate magna. Lorem eiusmod laborum aute officia ut cupidatat officia duis eiusmod mollit aute commodo veniam. Nisi cillum nisi labore ex nulla minim. Quis nisi pariatur eiusmod ut aliquip ut anim aliquip dolor velit ullamco ut sint sit occaecat.
+<Steps>
 
-Officia minim aliqua laboris Lorem sit nostrud nisi esse consequat consectetur consequat amet aliqua magna. Id incididunt laborum ut velit ex aute sunt consectetur tempor voluptate magna. Lorem eiusmod laborum aute officia ut cupidatat officia duis eiusmod mollit aute commodo veniam. Nisi cillum nisi labore ex nulla minim. Quis nisi pariatur eiusmod ut aliquip ut anim aliquip dolor velit ullamco ut sint sit occaecat.
+### Clone the repo
+
+```bash filename="Terminal"
+git clone https://github.com/langfuse/oss-llmops-stack.git
+cd oss-llmops-stack
+```
+
+### Add env
+
+Add OpenAI key to `docker-compose/litellm.env`
+
+### Run Stack
+
+```bash filename="Terminal"
+cd docker-compose
+docker compose up
+```
+
+### Make requests
+
+```bash filename="Terminal"
+curl -X POST 'http://0.0.0.0:4000/chat/completions' \
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer sk-1234' \
+    -d '{
+        "model": "o3-mini",
+        "messages": [
+        {
+            "role": "system",
+            "content": "You are a helpful math tutor. Guide the user through the solution step by step."
+        },
+        {
+            "role": "user",
+            "content": "how can I solve 8x + 7 = -23"
+        }
+        ]
+    }'
+```
+
+### See resulting traces in Langfuse
+
+Langfuse is running on http://localhost:3000
+
+Default credentials:
+
+- Email: admin@example.com
+- Password: your-secure-password
+
+</Steps>
