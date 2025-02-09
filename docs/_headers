@@ -1,0 +1,10 @@
+# Cache Next.js build assets with a long max-age and immutable flag.
+# (These files include hashes so they are immutable.)
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Optionally (no need yet), if you want to ensure that any non-HTML assets (for example,
+# images, fonts, etc.) that are not under /_next/static or /static are cached,
+# you could add additional rules. For example, for images:
+# /images/*
+#   Cache-Control: public, max-age=31536000, immutable
