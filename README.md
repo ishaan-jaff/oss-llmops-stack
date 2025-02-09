@@ -30,3 +30,13 @@
 4. See resulting traces in Langfuse on http://localhost:3000
    - Email: admin@example.com
    - Password: your-secure-password
+
+## Edit Docs
+
+Requirements: Node.js 20+, pnpm
+
+```bash
+cd docs
+pnpm i
+pnpm dev
+```
