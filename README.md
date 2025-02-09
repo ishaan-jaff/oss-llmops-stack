@@ -1,4 +1,4 @@
 # OSS LLMOps Stack
 
 > [!NOTE]  
-> Learn more about the OSS LLMOps stack: [oss-llmops-stack.com](https://oss-llmops-stack.com)
+> Learn more: [oss-llmops-stack.com](https://oss-llmops-stack.com)
