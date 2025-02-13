@@ -1,5 +1,7 @@
 import { useConfig } from "nextra-theme-docs";
 import { useRouter } from "next/router";
+import { Callout, Cards, Steps, Tabs } from "nextra/components";
+
 export default {
   logo: <span>OSS LLMOps Stack</span>,
   project: {
@@ -31,6 +33,13 @@ export default {
   footer: {
     content: "The OSS LLMOps Stack",
   },
+  components: {
+    Callout,
+    Tabs,
+    Tab: Tabs.Tab,
+    Steps,
+    Cards,
+    Card: Cards.Card,
+  },
   faviconGlyph: "⚡️",
-  // ... other theme options
 };

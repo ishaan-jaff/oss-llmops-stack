@@ -1,13 +1,13 @@
 export default {
     index: {
-        title: 'About',
+        title: 'Overview',
         type: 'page',
         theme: {
             typesetting: 'article'
         }
     },
-    "get-started": {
-        title: 'Get Started',
+    "docs": {
+        title: 'Docs',
         type: 'page'
     },
 }
