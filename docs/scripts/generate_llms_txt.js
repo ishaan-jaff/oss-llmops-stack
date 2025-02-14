@@ -3,8 +3,8 @@ const xml2js = require('xml2js');
 const path = require('path');
 
 const SITEMAP_PATH = 'out/sitemap-0.xml';
-const TITLE = 'OSS LLMOps Stack';
-const INTRO_DESCRIPTION = 'Lorem Ipsum.';
+const TITLE = 'The Open Source LLMOps Stack';
+const INTRO_DESCRIPTION = 'Introducing the Open Source LLMOps Stack based on LiteLLM and Langfuse which is well-integrated and can be easily self-hosted.';
 const MAIN_SECTIONS = [
     'docs',
 ];
