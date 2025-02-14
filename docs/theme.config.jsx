@@ -26,6 +26,7 @@ export default {
         <meta property="og:url" content={url} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
+        <link rel="icon" href="/favicon.ico" />
       </>
     );
   },
@@ -41,5 +42,4 @@ export default {
     Cards,
     Card: Cards.Card,
   },
-  faviconGlyph: "⚡️",
 };
