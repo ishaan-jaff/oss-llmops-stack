@@ -12,8 +12,8 @@ export default function App({ Component, pageProps }) {
 
   useEffect(() => {
     // Initialize PostHog
-    if (typeof window !== "undefined" && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
-      posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
+    if (typeof window !== "undefined") {
+      posthog.init("phc_ul4oKZkeeW7thZpBTLok0Wp2VsxK3OHU3eSWyWnD2rL", {
         api_host: "https://ph.oss-llmops-stack.com",
         ui_host: "https://eu.posthog.com",
         // Enable debug mode in development
