@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     // Initialize PostHog
     if (typeof window !== "undefined") {
-      posthog.init("phc_ul4oKZkeeW7thZpBTLok0Wp2VsxK3OHU3eSWyWnD2rL", {
+      posthog.init("phc_zkMwFajk8ehObUlMth0D7DtPItFnxETi3lmSvyQDrwB", {
         api_host: "https://ph.oss-llmops-stack.com",
         ui_host: "https://eu.posthog.com",
         // Enable debug mode in development
