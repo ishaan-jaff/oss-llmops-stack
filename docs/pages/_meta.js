@@ -7,7 +7,7 @@ export default {
         }
     },
     "docs": {
-        title: 'Docs',
+        title: 'Get Started',
         type: 'page'
     },
 }
