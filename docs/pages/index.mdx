@@ -7,6 +7,26 @@ description: Introducing the Open Source LLMOps Stack based on LiteLLM and Langf
 
 <div className="mt-10" />
 
+<div className="block sm:hidden max-w-96 mx-auto">
+
+```mermaid
+graph TB
+  LLM["<strong>LLM</strong><br/>API or service"]
+  App["<strong>Application</strong>"]
+  Langfuse["<img src='/langfuse_logo.svg' width='60' height='60' alt='Langfuse Logo' style='margin-bottom: 15px; ' class='show-light' /><img src='/langfuse_logo_dark.svg' width='60' height='60' alt='Langfuse Logo' style='margin-bottom: 15px; ' class='show-dark' />Tracing/Observability<br/>Evaluation<br/>Prompt Management<br/>Cost Tracking<br/>Security Monitoring<br/>Experiments<br/>... (see docs)"]
+  LiteLLM["<img src='/litellm_logo.png' width='60' height='60' alt='LiteLLM Logo' style='margin-bottom: 10px;' class='show-light' /><img src='/litellm_logo_dark.png' width='60' height='60' alt='LiteLLM Logo' style='margin-bottom: 10px;' class='show-dark' />Schema translation<br/>Rate limiting<br/>PII redaction<br/>Caching<br/>... (see docs)"]
+
+  App -->|async tracing|Langfuse
+  Langfuse -->|prompt management| App
+  LLM --- App
+  LLM --- LiteLLM --- App
+  LiteLLM <-->|"integration: logging and prompt management"| Langfuse
+```
+
+</div>
+
+<div className="hidden sm:block">
+
 ```mermaid
 graph LR
   LLM["<strong>LLM</strong><br/>API or service"]
@@ -20,6 +40,8 @@ graph LR
   LLM --- LiteLLM --- App
   LiteLLM <-->|"integration: logging and prompt management"| Langfuse
 ```
+
+</div>
 
 ## Introduction
 
